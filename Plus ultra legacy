@@ -1,0 +1,36 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("OP")
+
+local KillingCheats = PhantomForcesWindow:NewSection("PREMIUM")
+
+KillingCheats:CreateToggle("slide loop", function(gay)
+
+G_loop = gay
+
+while G_loop do
+
+local args = {
+    [1] = "X"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("QuirksThings"):WaitForChild("Fire"):FireServer(unpack(args))
+wait()
+end
+end)
+
+KillingCheats:CreateButton("Slide", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2291.31958, -353.892059, 8.26484394, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+KillingCheats:CreateButton("Slide", function()
+
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+
+end)
